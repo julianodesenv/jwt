@@ -37,3 +37,7 @@ $signature_base64 = base64_encode($signature);
 echo "Signature RAW: ".$signature;
 echo "\n";
 echo "Signature JWT: ".$signature_base64;
+echo "\n\n";
+
+$token = "$header_base64.$payload_base64.$signature_base64";
+echo "TOKEN: ".$token;
